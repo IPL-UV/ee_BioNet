@@ -10,7 +10,7 @@ An application to explore the results of BioNet without having a Google Earth En
 
 https://ispguv.users.earthengine.app/view/high-resolution-parameter-retrieval-with-bionet
 
-To add the GEE repository containing the scripts to your GEE accounte click below:
+To add the GEE repository containing the BioNet source code to your GEE account click the link below:
 
 https://code.earthengine.google.com/?accept_repo=users/ispguv/BioNet
 
@@ -18,3 +18,7 @@ https://code.earthengine.google.com/?accept_repo=users/ispguv/BioNet
 
 Figure 1: BioNet processing chain. We exploit high-resolution cloud-free data derived from the HISTARFM. The reflectances are used for the neural network to produce high-resolution (30m) estimates of biophysical parameters (LAI, FAPAR, FVC, CWC). The neural network is trained inverting
 PROSAIL. 
+
+![image](https://user-images.githubusercontent.com/49197052/181773604-18ea4824-cc40-411d-af6a-b40079c9568e.png)
+
+Figure 2: BioNet results of prediction and uncertainties for LAI, FAPAR and FVC (August 2016).
