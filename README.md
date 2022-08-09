@@ -26,6 +26,9 @@ To add the GEE repository containing the BioNet source code to your GEE account 
 
 https://code.earthengine.google.com/?accept_repo=users/ispguv/BioNet
 
+![image](https://user-images.githubusercontent.com/49197052/183675574-16b52faf-7261-4b67-bb1a-a009bdaf4e35.png)
+
+
 Three source codes are available:
 
 1. **bioNet_nested.js**
