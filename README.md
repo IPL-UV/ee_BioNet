@@ -1,5 +1,5 @@
 # ee-BioNet
-The Google Earth Engine implementation of the [BioNet](https://www.sciencedirect.com/science/article/pii/S003442572200309) algorithm to estimate biophysical parameters along with their uncertainties.
+The Google Earth Engine implementation of the [BioNet](https://doi.org/10.1016/j.rse.2022.113199) algorithm to estimate biophysical parameters along with their uncertainties.
 
 ### Quantifying Uncertainty in High Resolution Biophysical Variable Retrieval with Machine Learning
 
