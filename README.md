@@ -7,7 +7,7 @@ The estimation of biophysical variables is at the core of remote sensing science
 * Leaf Area Index (LAI) 
 * Fraction of Absorbed Photosynthetically Active Radiation (FAPAR) 
 * Canopy Water Content (CWC) 
-* Fractional Vegetation Cover (FVC).
+* Fractional Vegetation Cover (FVC)
 
 An application to explore the results of BioNet without having a Google Earth Engine account can be found here:
 
