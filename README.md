@@ -47,9 +47,9 @@ Figure 3: BioNet results with the provided code for predicting FAPAR with HISTAR
 3. **bioNet_callExample_Landsat_5**
 
 
-This code shows an example javascript code to call the BioNet function and compute the desired biophysical parameter using standard harmonized Landsat 5, 7, and 8 collection 2 surface reflectance data. Please, check this fantastic [community tutorial](https://developers.google.com/earth-engine/tutorials/community/landsat-etm-to-oli-harmonization?hl=en) by Justin Braaten to use any Landsat sensor after the harmonization process. In this script, the uncertainties of the bands are constant and need to be set in advance. 
+This code shows an example javascript code to call the BioNet function and compute the desired biophysical parameter using standard harmonized Landsat 5, 7, and 8 collection 2 surface reflectance data. Please, check this fantastic [community tutorial](https://developers.google.com/earth-engine/tutorials/community/landsat-etm-to-oli-harmonization?hl=en) by Justin Braaten to use any Landsat sensor after the harmonization process. In this script, the uncertainties of the bands are constant and need to be set in advance. The following values are not optimal and were set for illustrative purposes only.  
 ```javascript
-var banderrors=[100,100,100,100,100,100]; //This values are for B1,B2,B3,B4,B5,B7 respectively 
+var banderrors=[100,100,100,100,100,100]; //This values are for B1,B2,B3,B4,B5,B7 respectively
 ```
 ![image](https://user-images.githubusercontent.com/49197052/183677355-0012a025-e675-4765-b02a-188b4b57594c.png)
 Figure 4: BioNet results with the provided code for predicting FAPAR with standard Landsat 5 surface reflectance data (August 2011).
