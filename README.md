@@ -11,7 +11,7 @@ The estimation of biophysical variables is at the core of remote sensing science
 
 ![image](https://user-images.githubusercontent.com/49197052/181771329-2ed4129a-e8a6-4b42-978f-654296f9ff8e.png)
 
-Figure 1: BioNet processing chain. We exploit high-resolution cloud-free data derived from the HISTARFM. The reflectances are used for the neural network to produce high-resolution (30m) estimates of biophysical parameters (LAI, FAPAR, FVC, CWC). The neural network is trained inverting
+Figure 1: BioNet processing chain. We exploit high-resolution cloud-free data derived from the [link](https://www.sciencedirect.com/science/article/pii/S0034425720302716?via%3Dihub) "HISTARFM") algorithm. The reflectances are used for the neural network to produce high-resolution (30m) estimates of biophysical parameters (LAI, FAPAR, FVC, CWC). The neural network is trained inverting
 PROSAIL. 
 
 ![image](https://user-images.githubusercontent.com/49197052/181773604-18ea4824-cc40-411d-af6a-b40079c9568e.png)
