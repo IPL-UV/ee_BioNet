@@ -29,12 +29,18 @@ https://code.earthengine.google.com/?accept_repo=users/ispguv/BioNet
 Three source codes are available:
 
 1. **bioNet_nested.js**
+
+
 This is the primary function of the BioNet algorithm. For further details, we recommend reading the main [paper](https://doi.org/10.1016/j.rse.2022.113199) published in Remote Sensing of Environment. It computes the selected Biophysical Variable (LAI, FAPAR, FVC, or CWC) along with its associated total calibrated uncertainty (epistemic + aleatoric). This function is meant to be called from a different code for improved readability.
 
 2. **bioNet_callExample_HISTARFM_gap_free**
+
+
 This code shows an example javascript code to call the main BioNet function and compute the desired biophysical parameter using the gap-filled data provided by the [HISTARFM](https://www.sciencedirect.com/science/article/pii/S0034425720302716?via%3Dihub) algorithm. Using HISTARFM fused reflectance data is the preferred input data for BioNet, as it offers continuous and reduced noise surface reflectance harmonized Landsat data. Along with the reflectance data, HISTARFM provides realistic and spatiotemporal explicit uncertainties for each band which are ideal for error propagation purposes.
 
 3. **bioNet_callExample_Landsat_5**
+
+
 This code shows an example javascript code to call the BioNet function and compute the desired biophysical parameter using standard harmonized Landsat 5, 7, and 8 collection 2 surface reflectance data. Please, check this fantastic [community tutorial](https://developers.google.com/earth-engine/tutorials/community/landsat-etm-to-oli-harmonization?hl=en) by Justin Braaten to use any Landsat sensor after the harmonization process. In this script, the uncertainties of the bands are constant and need to be set in advance. 
 ```javascript
 var banderrors=[100,100,100,100,100,100]; //This values are for B1,B2,B3,B4,B5,B7 respectively 
