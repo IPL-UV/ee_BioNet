@@ -41,6 +41,9 @@ This is the primary function of the BioNet algorithm. For further details, we re
 
 This code shows an example javascript code to call the main BioNet function and compute the desired biophysical parameter using the gap-filled data provided by the [HISTARFM](https://www.sciencedirect.com/science/article/pii/S0034425720302716?via%3Dihub) algorithm. Using HISTARFM fused reflectance data is the preferred input data for BioNet, as it offers continuous and reduced noise surface reflectance harmonized Landsat data. Along with the reflectance data, HISTARFM provides realistic and spatiotemporal explicit uncertainties for each band which are ideal for error propagation purposes.
 
+![image](https://user-images.githubusercontent.com/49197052/183677686-b5161171-aee4-4baf-9935-73bbf46e1118.png)
+Figure 4: BioNet results with the provided code for predicting FAPAR with HISTARFM Landsat and MODIS fused data (August 2011).
+
 3. **bioNet_callExample_Landsat_5**
 
 
@@ -48,5 +51,7 @@ This code shows an example javascript code to call the BioNet function and compu
 ```javascript
 var banderrors=[100,100,100,100,100,100]; //This values are for B1,B2,B3,B4,B5,B7 respectively 
 ```
+![image](https://user-images.githubusercontent.com/49197052/183677355-0012a025-e675-4765-b02a-188b4b57594c.png)
+Figure 4: BioNet results with the provided code for predicting FAPAR with standard Landsat 5 data (August 2011).
 
 If you have any further questions or doubts, please don't hesitate to contact us.
