@@ -35,6 +35,10 @@ This is the primary function of the BioNet algorithm. For further details, we re
 This code shows an example javascript code to call the main BioNet function and compute the desired biophysical parameter using the gap-filled data provided by the [HISTARFM](https://www.sciencedirect.com/science/article/pii/S0034425720302716?via%3Dihub) algorithm. Using HISTARFM fused reflectance data is the preferred input data for BioNet, as it offers continuous and reduced noise surface reflectance harmonized Landsat data. Along with the reflectance data, HISTARFM provides realistic and spatiotemporal explicit uncertainties for each band which are ideal for error propagation.
 
 3. **bioNet_callExample_Landsat_5**
-This code shows a javascript code to call the BioNet function and compute the desired biophysical parameter using standard harmonized Landsat 5, 7, and 8 collection 2 surface reflectance data. Please, check this fantastic [community tutorial](https://developers.google.com/earth-engine/tutorials/community/landsat-etm-to-oli-harmonization?hl=en) by Justin Braaten to use any Landsat sensor after the harmonization process.
+This code shows a javascript code to call the BioNet function and compute the desired biophysical parameter using standard harmonized Landsat 5, 7, and 8 collection 2 surface reflectance data. Please, check this fantastic [community tutorial](https://developers.google.com/earth-engine/tutorials/community/landsat-etm-to-oli-harmonization?hl=en) by Justin Braaten to use any Landsat sensor after the harmonization process. 3. **bioNet_callExample_Landsat_5**
+This code shows a javascript code to call the BioNet function and compute the desired biophysical parameter using standard harmonized Landsat 5, 7, and 8 collection 2 surface reflectance data. Please, check this fantastic [community tutorial](https://developers.google.com/earth-engine/tutorials/community/landsat-etm-to-oli-harmonization?hl=en) by Justin Braaten to use any Landsat sensor after the harmonization process. In this script, the uncertainties of the bands are constant and need to be set in advance. 
+```
+var banderrors=[100,100,100,100,100,100]; //This values are for B1,B2,B3,B4,B5,B7 respectively 
+```
 
 If you have any further questions or doubts, please don't hesitate to contact us.
