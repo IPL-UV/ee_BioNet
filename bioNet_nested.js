@@ -16,7 +16,7 @@ bioNet.bioNetcompute = function(collection,parameter){
   var nest = function(Who,Wih){
     var computeBIO=function(img){
       var d = ee.Date(ee.Number(img.get('system:time_start')));
-      var doy = d.getRelative('day', 'year');
+      var doy = d.getRelative('day', 'year').add(1);
       var m = ee.Number(d.get('month'));
       var y = ee.Number(d.get('year'));
       var  inputs=img;      
@@ -55,7 +55,7 @@ bioNet.bioNetcompute = function(collection,parameter){
     //This functions scale the Landsat exactly like matlab
     var scaledatainputs = function(image)  {
         var d = ee.Date(ee.Number(image.get('system:time_start')));
-        var doy = d.getRelative('day', 'year');
+        var doy = d.getRelative('day', 'year').add(1);
         var m = ee.Number(d.get('month'));
         var y = ee.Number(d.get('year'));
             
@@ -270,6 +270,7 @@ bioNet.bioNetcompute = function(collection,parameter){
    var dp4 = collection.map(scaledatainputs).map(nest(Who_dp4,Wih_dp4));
    
    var compute_bands = all.combine(dp1.select([0])).combine(dp2.select([0])).combine(dp3.select([0])).combine(dp4.select([0]));
+   compute_bands = compute_bands.sort('system:time_start');
    var col =compute_bands.map(compute_media).map(compute_std).map(compute_total);
   
   return col.select([0,8],[parameter,parameter+'total']);
