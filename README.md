@@ -54,4 +54,22 @@ var banderrors=[100,100,100,100,100,100]; //This values are for B1,B2,B3,B4,B5,B
 ![image](https://user-images.githubusercontent.com/49197052/183677355-0012a025-e675-4765-b02a-188b4b57594c.png)
 Figure 4: BioNet results with the provided code for predicting FAPAR with standard Landsat 5 surface reflectance data (August 2011).
 
+
+If you use *bioNet* and this repository, please cite it as follow:
+
+APA:
+
+Martínez-Ferrer, L. Moreno-Martínez, Á., Campos-Taberner, M., García-Haro, F. J., Muñoz-Marí, J., Running, S. W., Kimball J.,  Clinton, N. & Camps-Valls, G. (2022). Quantifying uncertainty in high resolution biophysical variable retrieval with machine learning. Remote Sensing of Environment, 280, 113199.
+
+BibTeX:
+
+@article{martinez2022quantifying,
+title = {Quantifying uncertainty in high resolution biophysical variable retrieval with machine learning},
+author = {Laura Martínez-Ferrer and {\'A}lvaro Moreno-Mart{\'\i}nez and Manuel Campos-Taberner and Francisco Javier Garc{\'\i}a-Haro and Jordi Mu{\~n}oz-Mar{\'\i} and Steven W. Running and John Kimball and Nicholas Clinton and Gustau Camps-Valls},
+journal = {Remote Sensing of Environment},
+volume = {280},
+pages = {113199},
+publisher={Elsevier}
+}
+
 If you have any further questions or doubts, please don't hesitate to contact us.
